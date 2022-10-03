@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokeapi</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Lora:ital@1&family=Play&family=Space+Mono&display=swap" rel="stylesheet">
+
+<body>
+
+
+        <div class="page-wrapper">
+            <section>
+            <div class="logo-img">
+                <img src="img/descarga.png" alt="Logo">
+            </div>
+            <div class="buscar" id="busqueda">
+                <form action="" method="get"  class="seach_form">
+                    <input type="text" class="input w-input"  name="name" placeholder="Search Pokemon" id="name">
+                    <br>
+                    <div class="label">Use this input to search for any pokemon. In an instant</div>
+                </form>
+            </div>
+
+            <div class="main">
+                <div class="main_fuctions">
+                    <div class="main_filter">
+                        <div class="text-block">Filter by type:</div>
+                        <div class="filter_type-wrraper">
+                            <div class="filter_type--normal" id="normal">Normal</div>
+                            <div class="filter_type--grass" id="grass">Grass</div>
+                            <div class="filter_type--fire" id="fire">Fire</div>
+                            <div class="filter_type--water" id="water" >Water</div>
+                            <div class="filter_type--bug" id="bug" >Bug</div>
+                            <div class="filter_type--electric"id="ele" >Electric</div>
+                            <div class="filter_type--rock" id="rock">Rock</div>
+                            <div class="filter_type--ghost" id="ghost">Ghost</div>
+                            <div class="filter_type--poison" id="poison">Poison</div>
+                            <div class="filter_type--psychic" id="pysc">Psychic</div>
+                            <div class="filter_type--fighting" id="fight">Fighting</div>
+                            <div class="filter_type--ground" id="ground">Ground</div>
+                            <div class="filter_type -dragon" id="dra">Dragon</div>
+                            <div class="filter_type--fairy" id="fai">Fairy</div>
+                            <div class="filter_type--ice" id="ice">Ice</div>
+                            <div class="filter_type--rest" id="rest">Rest</div>   
+                        </div>
+                    </div>
+                    <div class="main_sort">
+                        <div class="main_componet">
+                            <form action="" method="get" class="sort_selec">
+                                <select name="sort_select" id="sort_select" class="sort_select">
+                                    <option value="id-asc">ID ASC</option>
+                                    <option value="id-dsc">ID DSC</option>
+                                    <option value="base-experience-asc">Base Experience ASC</option>
+                                    <option value="base-experience-dsc">Base Experience DSC</option>
+                                </select>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="pokemons">
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
+                        </div>
+                        <div class="pokemon_id-dsc">#001</div>
+                        <div class="pokemos_exp">Exp: 64</div>
+                        <div class="pokemos_name">Bulbasaur</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="Ivysaur">
+                        </div>
+                        <div class="pokemon_id-dsc">#002</div>
+                        <div class="pokemos_exp">Exp: 142</div>
+                        <div class="pokemos_name">Tvysaur</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" alt="Venusaur">
+                        </div>
+                        <div class="pokemon_id-dsc">#003</div>
+                        <div class="pokemos_exp">Exp: 263</div>
+                        <div class="pokemos_name">Venusaur</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="Charmander">
+                        </div>
+                        <div class="pokemon_id-dsc">#004</div>
+                        <div class="pokemos_exp">Exp: 62</div>
+                        <div class="pokemos_name">Charmander</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="Charmeleon">
+                        </div>
+                        <div class="pokemon_id-dsc">#005</div>
+                        <div class="pokemos_exp">Exp: 142</div>
+                        <div class="pokemos_name">Charmeleon</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" alt="Charizard">
+                        </div>
+                        <div class="pokemon_id-dsc">#006</div>
+                        <div class="pokemos_exp">Exp: 267</div>
+                        <div class="pokemos_name">Charizard</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="Squirtle">
+                        </div>
+                        <div class="pokemon_id-dsc">#007</div>
+                        <div class="pokemos_exp">Exp: 63</div>
+                        <div class="pokemos_name">Squirtle</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png" alt="Wartotle">
+                        </div>
+                        <div class="pokemon_id-dsc">#008</div>
+                        <div class="pokemos_exp">Exp: 142</div>
+                        <div class="pokemos_name">Wartotle</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="Blastoise">
+                        </div>
+                        <div class="pokemon_id-dsc">#009</div>
+                        <div class="pokemos_exp">Exp: 206</div>
+                        <div class="pokemos_name">Blastoise</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png" alt="Caterpie">
+                        </div>
+                        <div class="pokemon_id-dsc">#010</div>
+                        <div class="pokemos_exp">Exp: 39</div>
+                        <div class="pokemos_name">Caterpie</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png" alt="Metapod">
+                        </div>
+                        <div class="pokemon_id-dsc">#011</div>
+                        <div class="pokemos_exp">Exp: 72</div>
+                        <div class="pokemos_name">Metapod</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png" alt="Butterfree">
+                        </div>
+                        <div class="pokemon_id-dsc">#012</div>
+                        <div class="pokemos_exp">Exp: 190</div>
+                        <div class="pokemos_name">Butterfree</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png" alt="Weedle">
+                        </div>
+                        <div class="pokemon_id-dsc">#013</div>
+                        <div class="pokemos_exp">Exp: 39</div>
+                        <div class="pokemos_name">Weedle</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png" alt="Kakuna">
+                        </div>
+                        <div class="pokemon_id-dsc">#014</div>
+                        <div class="pokemos_exp">Exp: 72</div>
+                        <div class="pokemos_name">Kakuna</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png" alt="Beedrill">
+                        </div>
+                        <div class="pokemon_id-dsc">#015</div>
+                        <div class="pokemos_exp">Exp: 170</div>
+                        <div class="pokemos_name">Beedrill</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png" alt="Pidgey">
+                        </div>
+                        <div class="pokemon_id-dsc">#016</div>
+                        <div class="pokemos_exp">Exp: 50</div>
+                        <div class="pokemos_name">Pidgey</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png" alt="Pidgeotto">
+                        </div>
+                        <div class="pokemon_id-dsc">#017</div>
+                        <div class="pokemos_exp">Exp: 122</div>
+                        <div class="pokemos_name">Pidgeotto</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png" alt="Pidgeot">
+                        </div>
+                        <div class="pokemon_id-dsc">#018</div>
+                        <div class="pokemos_exp">Exp: 216</div>
+                        <div class="pokemos_name">Pidgeot</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png" alt="Ratta">
+                        </div>
+                        <div class="pokemon_id-dsc">#019</div>
+                        <div class="pokemos_exp">Exp: 51</div>
+                        <div class="pokemos_name">Ratta</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png" alt="Raticate">
+                        </div>
+                        <div class="pokemon_id-dsc">#020</div>
+                        <div class="pokemos_exp">Exp: 145</div>
+                        <div class="pokemos_name">Raticate</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png" alt="Spearow">
+                        </div>
+                        <div class="pokemon_id-dsc">#021</div>
+                        <div class="pokemos_exp">Exp: 62 </div>
+                        <div class="pokemos_name">Spearow</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png" alt="Fearow">
+                        </div>
+                        <div class="pokemon_id-dsc">#022</div>
+                        <div class="pokemos_exp">Exp: 155</div>
+                        <div class="pokemos_name">Fearow</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png" alt="Ekans">
+                        </div>
+                        <div class="pokemon_id-dsc">#023</div>
+                        <div class="pokemos_exp">Exp: 50</div>
+                        <div class="pokemos_name">Ekans</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png" alt="Arbok">
+                        </div>
+                        <div class="pokemon_id-dsc">#024</div>
+                        <div class="pokemos_exp">Exp: 167</div>
+                        <div class="pokemos_name">Arbok</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pikachu">
+                        </div>
+                        <div class="pokemon_id-dsc">#025</div>
+                        <div class="pokemos_exp">Exp: 112</div>
+                        <div class="pokemos_name">Pikachu</div>
+                        <div class="pokemos_type">Electric</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png" alt="Raichu">
+                        </div>
+                        <div class="pokemon_id-dsc">#026</div>
+                        <div class="pokemos_exp">Exp: 243</div>
+                        <div class="pokemos_name">Raichu</div>
+                        <div class="pokemos_type">Electric</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png" alt="Sandshrew">
+                        </div>
+                        <div class="pokemon_id-dsc">#027</div>
+                        <div class="pokemos_exp">Exp: 60</div>
+                        <div class="pokemos_name">Sandshrew</div>
+                        <div class="pokemos_type">Ground</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png" alt="Sandslash">
+                        </div>
+                        <div class="pokemon_id-dsc">#028</div>
+                        <div class="pokemos_exp">Exp: 150</div>
+                        <div class="pokemos_name">Sandslash</div>
+                        <div class="pokemos_type">Ground</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png" alt="Nidoran-f">
+                        </div>
+                        <div class="pokemon_id-dsc">#029</div>
+                        <div class="pokemos_exp">Exp: 55</div>
+                        <div class="pokemos_name">Nidoran-f</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png" alt="Nidorina">
+                        </div>
+                        <div class="pokemon_id-dsc">#030</div>
+                        <div class="pokemos_exp">Exp: 120</div>
+                        <div class="pokemos_name">Nidorina</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png" alt="Nidoqueen">
+                        </div>
+                        <div class="pokemon_id-dsc">#031</div>
+                        <div class="pokemos_exp">Exp: 250</div>
+                        <div class="pokemos_name">Nidoqueen</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png" alt="Nidoran-n">
+                        </div>
+                        <div class="pokemon_id-dsc">#032</div>
+                        <div class="pokemos_exp">Exp: 66</div>
+                        <div class="pokemos_name">Nidoran-n</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png" alt="Nidorino">
+                        </div>
+                        <div class="pokemon_id-dsc">#033</div>
+                        <div class="pokemos_exp">Exp: 120</div>
+                        <div class="pokemos_name">Nidorino</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png" alt="Nidoking">
+                        </div>
+                        <div class="pokemon_id-dsc">#034</div>
+                        <div class="pokemos_exp">Exp: 263</div>
+                        <div class="pokemos_name">Nidoking</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png" alt="Clefairy">
+                        </div>
+                        <div class="pokemon_id-dsc">#035</div>
+                        <div class="pokemos_exp">Exp: 113</div>
+                        <div class="pokemos_name">Clefairy</div>
+                        <div class="pokemos_type">Fairy</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png" alt="Clefable">
+                        </div>
+                        <div class="pokemon_id-dsc">#036</div>
+                        <div class="pokemos_exp">Exp: 242</div>
+                        <div class="pokemos_name">Clefable</div>
+                        <div class="pokemos_type">Fairy</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png" alt="Vulpix">
+                        </div>
+                        <div class="pokemon_id-dsc">#037</div>
+                        <div class="pokemos_exp">Exp: 60</div>
+                        <div class="pokemos_name">Vulpix</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png" alt="Ninetales">
+                        </div>
+                        <div class="pokemon_id-dsc">#038</div>
+                        <div class="pokemos_exp">Exp: 177</div>
+                        <div class="pokemos_name">Ninetales</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png" alt="Jigglypuff">
+                        </div>
+                        <div class="pokemon_id-dsc">#039</div>
+                        <div class="pokemos_exp">Exp: 95</div>
+                        <div class="pokemos_name">Jigglypuff</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png" alt="Wigglytuff">
+                        </div>
+                        <div class="pokemon_id-dsc">#040</div>
+                        <div class="pokemos_exp">Exp: 210</div>
+                        <div class="pokemos_name">Wigglytuff</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png" alt="Zubat">
+                        </div>
+                        <div class="pokemon_id-dsc">#041</div>
+                        <div class="pokemos_exp">Exp: 49</div>
+                        <div class="pokemos_name">Zubat</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png" alt="Golbat">
+                        </div>
+                        <div class="pokemon_id-dsc">#042</div>
+                        <div class="pokemos_exp">Exp: 159</div>
+                        <div class="pokemos_name">Golbat</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png" alt="Oddish">
+                        </div>
+                        <div class="pokemon_id-dsc">#043</div>
+                        <div class="pokemos_exp">Exp: 64</div>
+                        <div class="pokemos_name">Oddish</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png" alt="Gloon">
+                        </div>
+                        <div class="pokemon_id-dsc">#044</div>
+                        <div class="pokemos_exp">Exp: 130</div>
+                        <div class="pokemos_name">Gloon</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png" alt="Vileplume">
+                        </div>
+                        <div class="pokemon_id-dsc">#045</div>
+                        <div class="pokemos_exp">Exp: 245</div>
+                        <div class="pokemos_name">Vileplume</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png" alt="Paras">
+                        </div>
+                        <div class="pokemon_id-dsc">#046</div>
+                        <div class="pokemos_exp">Exp: 57</div>
+                        <div class="pokemos_name">Paras</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png" alt="Parasect">
+                        </div>
+                        <div class="pokemon_id-dsc">#047</div>
+                        <div class="pokemos_exp">Exp: 142</div>
+                        <div class="pokemos_name">Parasect</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png" alt="Venonat">
+                        </div>
+                        <div class="pokemon_id-dsc">#048</div>
+                        <div class="pokemos_exp">Exp: 61</div>
+                        <div class="pokemos_name">Venonat</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png" alt="Venomoth">
+                        </div>
+                        <div class="pokemon_id-dsc">#049</div>
+                        <div class="pokemos_exp">Exp: 150</div>
+                        <div class="pokemos_name">Venomoth</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png" alt="Diglett">
+                        </div>
+                        <div class="pokemon_id-dsc">#050</div>
+                        <div class="pokemos_exp">Exp: 63</div>
+                        <div class="pokemos_name">Diglett</div>
+                        <div class="pokemos_type">Ground</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png" alt="Dugtrio">
+                        </div>
+                        <div class="pokemon_id-dsc">#051</div>
+                        <div class="pokemos_exp">Exp: 149</div>
+                        <div class="pokemos_name">Dugtrio</div>
+                        <div class="pokemos_type">Ground</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png" alt="Meowth">
+                        </div>
+                        <div class="pokemon_id-dsc">#052</div>
+                        <div class="pokemos_exp">Exp: 50</div>
+                        <div class="pokemos_name">Meowth</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png" alt="Persian">
+                        </div>
+                        <div class="pokemon_id-dsc">#053</div>
+                        <div class="pokemos_exp">Exp: 154</div>
+                        <div class="pokemos_name">Persian</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" alt="Psyduck">
+                        </div>
+                        <div class="pokemon_id-dsc">#054</div>
+                        <div class="pokemos_exp">Exp: 64</div>
+                        <div class="pokemos_name">Psyduck</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png" alt="Golduck">
+                        </div>
+                        <div class="pokemon_id-dsc">#055</div>
+                        <div class="pokemos_exp">Exp: 175</div>
+                        <div class="pokemos_name">Golduck</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png" alt="Mankey">
+                        </div>
+                        <div class="pokemon_id-dsc">#056</div>
+                        <div class="pokemos_exp">Exp: 61</div>
+                        <div class="pokemos_name">Mankey</div>
+                        <div class="pokemos_type">Fighting</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png" alt="Primeape">
+                        </div>
+                        <div class="pokemon_id-dsc">#057</div>
+                        <div class="pokemos_exp">Exp: 159</div>
+                        <div class="pokemos_name">Primeape</div>
+                        <div class="pokemos_type">Fighting</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png" alt="growlithe">
+                        </div>
+                        <div class="pokemon_id-dsc">#058</div>
+                        <div class="pokemos_exp">Exp: 70</div>
+                        <div class="pokemos_name">Growlithe</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png" alt="Arcanine">
+                        </div>
+                        <div class="pokemon_id-dsc">#059</div>
+                        <div class="pokemos_exp">Exp: 194</div>
+                        <div class="pokemos_name">Arcanine</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png" alt="Poliwag">
+                        </div>
+                        <div class="pokemon_id-dsc">#060</div>
+                        <div class="pokemos_exp">Exp: 60</div>
+                        <div class="pokemos_name">Poliwag</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png" alt="Poliwhirl">
+                        </div>
+                        <div class="pokemon_id-dsc">#061</div>
+                        <div class="pokemos_exp">Exp: 125</div>
+                        <div class="pokemos_name">Poliwhirl</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png" alt="Poliwrath">
+                        </div>
+                        <div class="pokemon_id-dsc">#062</div>
+                        <div class="pokemos_exp">Exp: 255</div>
+                        <div class="pokemos_name">Poliwrath</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png" alt="abra">
+                        </div>
+                        <div class="pokemon_id-dsc">#063</div>
+                        <div class="pokemos_exp">Exp: 42</div>
+                        <div class="pokemos_name">Abra</div>
+                        <div class="pokemos_type">Psychic</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png" alt="kada">
+                        </div>
+                        <div class="pokemon_id-dsc">#064</div>
+                        <div class="pokemos_exp">Exp: 149</div>
+                        <div class="pokemos_name">Kadabra</div>
+                        <div class="pokemos_type">Psychic</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png" alt="alakazan">
+                        </div>
+                        <div class="pokemon_id-dsc">#065</div>
+                        <div class="pokemos_exp">Exp: 250</div>
+                        <div class="pokemos_name">Alakazan</div>
+                        <div class="pokemos_type">Psychic</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png" alt="alakazan">
+                        </div>
+                        <div class="pokemon_id-dsc">#066</div>
+                        <div class="pokemos_exp">Exp: 61</div>
+                        <div class="pokemos_name">Machop</div>
+                        <div class="pokemos_type">Fighting</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png" alt="machop">
+                        </div>
+                        <div class="pokemon_id-dsc">#067</div>
+                        <div class="pokemos_exp">Exp: 61</div>
+                        <div class="pokemos_name">Machop</div>
+                        <div class="pokemos_type">Fighting</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png" alt="machamp">
+                        </div>
+                        <div class="pokemon_id-dsc">#068</div>
+                        <div class="pokemos_exp">Exp: 263</div>
+                        <div class="pokemos_name">Machamp</div>
+                        <div class="pokemos_type">Fighting</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png" alt="bell">
+                        </div>
+                        <div class="pokemon_id-dsc">#069</div>
+                        <div class="pokemos_exp">Exp: 60</div>
+                        <div class="pokemos_name">Bellsprout</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png" alt="weepinell">
+                        </div>
+                        <div class="pokemon_id-dsc">#070</div>
+                        <div class="pokemos_exp">Exp: 117</div>
+                        <div class="pokemos_name">Weepinbell</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png" alt="bell">
+                        </div>
+                        <div class="pokemon_id-dsc">#071</div>
+                        <div class="pokemos_exp">Exp: 221</div>
+                        <div class="pokemos_name">Victreebel</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png" alt="tentacool">
+                        </div>
+                        <div class="pokemon_id-dsc">#072</div>
+                        <div class="pokemos_exp">Exp: 67</div>
+                        <div class="pokemos_name">Tentacool</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png" alt="tentacruel">
+                        </div>
+                        <div class="pokemon_id-dsc">#072</div>
+                        <div class="pokemos_exp">Exp: 100</div>
+                        <div class="pokemos_name">Tentacruel</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png" alt="geodude">
+                        </div>
+                        <div class="pokemon_id-dsc">#074</div>
+                        <div class="pokemos_exp">Exp: 60</div>
+                        <div class="pokemos_name">Geodude</div>
+                        <div class="pokemos_type">Rock</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png" alt="graerler">
+                        </div>
+                        <div class="pokemon_id-dsc">#075</div>
+                        <div class="pokemos_exp">Exp: 137</div>
+                        <div class="pokemos_name">Gaverler</div>
+                        <div class="pokemos_type">Rock</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png" alt="golem">
+                        </div>
+                        <div class="pokemon_id-dsc">#076</div>
+                        <div class="pokemos_exp">Exp: 223</div>
+                        <div class="pokemos_name">Golem</div>
+                        <div class="pokemos_type">Rock</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png" alt="ponyta">
+                        </div>
+                        <div class="pokemon_id-dsc">#077</div>
+                        <div class="pokemos_exp">Exp: 82</div>
+                        <div class="pokemos_name">Ponyta</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png" alt="rapi">
+                        </div>
+                        <div class="pokemon_id-dsc">#078</div>
+                        <div class="pokemos_exp">Exp: 175</div>
+                        <div class="pokemos_name">Rapidash</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png" alt="slowpoke">
+                        </div>
+                        <div class="pokemon_id-dsc">#079</div>
+                        <div class="pokemos_exp">Exp: 63</div>
+                        <div class="pokemos_name">Slowpoke</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png" alt="slowbro">
+                        </div>
+                        <div class="pokemon_id-dsc">#080</div>
+                        <div class="pokemos_exp">Exp: 172</div>
+                        <div class="pokemos_name">Slowbro</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png" alt="magne">
+                        </div>
+                        <div class="pokemon_id-dsc">#081</div>
+                        <div class="pokemos_exp">Exp: 65</div>
+                        <div class="pokemos_name">Magnemite</div>
+                        <div class="pokemos_type">Electric</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png" alt="magne">
+                        </div>
+                        <div class="pokemon_id-dsc">#082</div>
+                        <div class="pokemos_exp">Exp: 163</div>
+                        <div class="pokemos_name">Magneton</div>
+                        <div class="pokemos_type">Electric</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png" alt="farte">
+                        </div>
+                        <div class="pokemon_id-dsc">#083</div>
+                        <div class="pokemos_exp">Exp: 132</div>
+                        <div class="pokemos_name">Farfetchd</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png" alt="doduo">
+                        </div>
+                        <div class="pokemon_id-dsc">#084</div>
+                        <div class="pokemos_exp">Exp: 62</div>
+                        <div class="pokemos_name">Duduo</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png" alt="dodrio">
+                        </div>
+                        <div class="pokemon_id-dsc">#085</div>
+                        <div class="pokemos_exp">Exp: 165</div>
+                        <div class="pokemos_name">Dodrio</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png" alt="seel">
+                        </div>
+                        <div class="pokemon_id-dsc">#086</div>
+                        <div class="pokemos_exp">Exp: 65</div>
+                        <div class="pokemos_name">Seel</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png" alt="dew">
+                        </div>
+                        <div class="pokemon_id-dsc">#087</div>
+                        <div class="pokemos_exp">Exp: 166</div>
+                        <div class="pokemos_name">Dewgong</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png" alt="griner">
+                        </div>
+                        <div class="pokemon_id-dsc">#088</div>
+                        <div class="pokemos_exp">Exp: 65</div>
+                        <div class="pokemos_name">Griner</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png" alt="mulk">
+                        </div>
+                        <div class="pokemon_id-dsc">#089</div>
+                        <div class="pokemos_exp">Exp: 175</div>
+                        <div class="pokemos_name">Mulk</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png" alt="shellder">
+                        </div>
+                        <div class="pokemon_id-dsc">#090</div>
+                        <div class="pokemos_exp">Exp: 61</div>
+                        <div class="pokemos_name">Shellder</div>
+                        <div class="pokemos_type">Water</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png" alt="clo">
+                        </div>
+                        <div class="pokemon_id-dsc">#091</div>
+                        <div class="pokemos_exp">Exp: 104</div>
+                        <div class="pokemos_name">cloyster</div>
+                        <div class="pokemos_type">Water</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png" alt="gastly">
+                        </div>
+                        <div class="pokemon_id-dsc">#092</div>
+                        <div class="pokemos_exp">Exp: 62</div>
+                        <div class="pokemos_name">Gastly</div>
+                        <div class="pokemos_type">Ghost</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png" alt="haunter">
+                        </div>
+                        <div class="pokemon_id-dsc">#093</div>
+                        <div class="pokemos_exp">Exp: 142</div>
+                        <div class="pokemos_name">Haunter</div>
+                        <div class="pokemos_type">Ghost</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png" alt="gengar">
+                        </div>
+                        <div class="pokemon_id-dsc">#094</div>
+                        <div class="pokemos_exp">Exp: 250</div>
+                        <div class="pokemos_name">Gengar</div>
+                        <div class="pokemos_type">Ghost</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png" alt="onix">
+                        </div>
+                        <div class="pokemon_id-dsc">#095</div>
+                        <div class="pokemos_exp">Exp: 77</div>
+                        <div class="pokemos_name">Onix</div>
+                        <div class="pokemos_type">Rock</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png" alt="drowzee">
+                        </div>
+                        <div class="pokemon_id-dsc">#096</div>
+                        <div class="pokemos_exp">Exp: 66</div>
+                        <div class="pokemos_name">Drowzee</div>
+                        <div class="pokemos_type">Psychic</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png" alt="hypno">
+                        </div>
+                        <div class="pokemon_id-dsc">#097</div>
+                        <div class="pokemos_exp">Exp: 169</div>
+                        <div class="pokemos_name">Hypno</div>
+                        <div class="pokemos_type">Psychic</div>
+                    </div>
+
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png" alt="krabby">
+                        </div>
+                        <div class="pokemon_id-dsc">#098</div>
+                        <div class="pokemos_exp">Exp: 65</div>
+                        <div class="pokemos_name">Karabby</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png" alt="kingler">
+                        </div>
+                        <div class="pokemon_id-dsc">#099</div>
+                        <div class="pokemos_exp">Exp: 166</div>
+                        <div class="pokemos_name">Kingler</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png" alt="voltord">
+                        </div>
+                        <div class="pokemon_id-dsc">#100</div>
+                        <div class="pokemos_exp">Exp: 66</div>
+                        <div class="pokemos_name">Voltord</div>
+                        <div class="pokemos_type">Electric</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png" alt="electode">
+                        </div>
+                        <div class="pokemon_id-dsc">#101</div>
+                        <div class="pokemos_exp">Exp: 172</div>
+                        <div class="pokemos_name">Electode</div>
+                        <div class="pokemos_type">Electric</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png" alt="exe">
+                        </div>
+                        <div class="pokemon_id-dsc">#102</div>
+                        <div class="pokemos_exp">Exp: 65</div>
+                        <div class="pokemos_name">Exeggacute</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png" alt="exe">
+                        </div>
+                        <div class="pokemon_id-dsc">#103</div>
+                        <div class="pokemos_exp">Exp: 106</div>
+                        <div class="pokemos_name">Exeggutor</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png" alt="cubone">
+                        </div>
+                        <div class="pokemon_id-dsc">#104</div>
+                        <div class="pokemos_exp">Exp: 64</div>
+                        <div class="pokemos_name">Cubone</div>
+                        <div class="pokemos_type">Ground</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png" alt="marowak">
+                        </div>
+                        <div class="pokemon_id-dsc">#105</div>
+                        <div class="pokemos_exp">Exp: 149</div>
+                        <div class="pokemos_name">Marowak</div>
+                        <div class="pokemos_type">Ground</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png" alt="hit">
+                        </div>
+                        <div class="pokemon_id-dsc">#106</div>
+                        <div class="pokemos_exp">Exp: 159</div>
+                        <div class="pokemos_name">Hitmonlee</div>
+                        <div class="pokemos_type">Fighting</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png" alt="hit">
+                        </div>
+                        <div class="pokemon_id-dsc">#107</div>
+                        <div class="pokemos_exp">Exp: 159</div>
+                        <div class="pokemos_name">Hitmonchan</div>
+                        <div class="pokemos_type">Fighting</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png" alt="lick">
+                        </div>
+                        <div class="pokemon_id-dsc">#108</div>
+                        <div class="pokemos_exp">Exp: 108</div>
+                        <div class="pokemos_name">Lickitung</div>
+                        <div class="pokemos_type">Fighting</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png" alt="koffing">
+                        </div>
+                        <div class="pokemon_id-dsc">#109</div>
+                        <div class="pokemos_exp">Exp: 68</div>
+                        <div class="pokemos_name">Koffing</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png" alt="weezing">
+                        </div>
+                        <div class="pokemon_id-dsc">#110</div>
+                        <div class="pokemos_exp">Exp: 172</div>
+                        <div class="pokemos_name">Weezing</div>
+                        <div class="pokemos_type">Poison</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png" alt="rhyhorn">
+                        </div>
+                        <div class="pokemon_id-dsc">#111</div>
+                        <div class="pokemos_exp">Exp: 69</div>
+                        <div class="pokemos_name">Rhyhorn</div>
+                        <div class="pokemos_type">Ground</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png" alt="rhydon">
+                        </div>
+                        <div class="pokemon_id-dsc">#112</div>
+                        <div class="pokemos_exp">Exp: 170</div>
+                        <div class="pokemos_name">Rhydon</div>
+                        <div class="pokemos_type">Ground</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png" alt="chansey">
+                        </div>
+                        <div class="pokemon_id-dsc">#113</div>
+                        <div class="pokemos_exp">Exp: 395</div>
+                        <div class="pokemos_name">Chansey</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png" alt="tangela">
+                        </div>
+                        <div class="pokemon_id-dsc">#114</div>
+                        <div class="pokemos_exp">Exp: 87</div>
+                        <div class="pokemos_name">Tangela</div>
+                        <div class="pokemos_type">Grass</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png" alt="kangaskhan">
+                        </div>
+                        <div class="pokemon_id-dsc">#115</div>
+                        <div class="pokemos_exp">Exp: 172</div>
+                        <div class="pokemos_name">Kangaskhan</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png" alt="horsea">
+                        </div>
+                        <div class="pokemon_id-dsc">#116</div>
+                        <div class="pokemos_exp">Exp: 59</div>
+                        <div class="pokemos_name">Horsea</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png" alt="sea">
+                        </div>
+                        <div class="pokemon_id-dsc">#117</div>
+                        <div class="pokemos_exp">Exp: 154</div>
+                        <div class="pokemos_name">Seadra</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png" alt="golden">
+                        </div>
+                        <div class="pokemon_id-dsc">#118</div>
+                        <div class="pokemos_exp">Exp: 64</div>
+                        <div class="pokemos_name">Goldeen</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png" alt="seak">
+                        </div>
+                        <div class="pokemon_id-dsc">#119</div>
+                        <div class="pokemos_exp">Exp: 150</div>
+                        <div class="pokemos_name">Seaking</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png" alt="staryu">
+                        </div>
+                        <div class="pokemon_id-dsc">#120</div>
+                        <div class="pokemos_exp">Exp: 60</div>
+                        <div class="pokemos_name">Stratyu</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png" alt="starmie">
+                        </div>
+                        <div class="pokemon_id-dsc">#121</div>
+                        <div class="pokemos_exp">Exp: 102</div>
+                        <div class="pokemos_name">Starmie</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png" alt="mr">
+                        </div>
+                        <div class="pokemon_id-dsc">#122</div>
+                        <div class="pokemos_exp">Exp: 161</div>
+                        <div class="pokemos_name">Mr-mime</div>
+                        <div class="pokemos_type">Psychic</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png" alt="Scyther">
+                        </div>
+                        <div class="pokemon_id-dsc">#123</div>
+                        <div class="pokemos_exp">Exp: 206</div>
+                        <div class="pokemos_name">Scyther</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png" alt="jynx">
+                        </div>
+                        <div class="pokemon_id-dsc">#124</div>
+                        <div class="pokemos_exp">Exp: 159</div>
+                        <div class="pokemos_name">Jynx</div>
+                        <div class="pokemos_type">Ice</div>
+                    </div>
+
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png" alt="electrabuzz">
+                        </div>
+                        <div class="pokemon_id-dsc">#125</div>
+                        <div class="pokemos_exp">Exp: 172</div>
+                        <div class="pokemos_name">Electrabuzz</div>
+                        <div class="pokemos_type">Electric</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png" alt="magmar">
+                        </div>
+                        <div class="pokemon_id-dsc">#126</div>
+                        <div class="pokemos_exp">Exp: 170</div>
+                        <div class="pokemos_name">Magmar</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png" alt="pinsir">
+                        </div>
+                        <div class="pokemon_id-dsc">#127</div>
+                        <div class="pokemos_exp">Exp: 175</div>
+                        <div class="pokemos_name">Pinsir</div>
+                        <div class="pokemos_type">Bug</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png" alt="tauros">
+                        </div>
+                        <div class="pokemon_id-dsc">#128</div>
+                        <div class="pokemos_exp">Exp: 172</div>
+                        <div class="pokemos_name">Tauros</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png" alt="magikarp">
+                        </div>
+                        <div class="pokemon_id-dsc">#129</div>
+                        <div class="pokemos_exp">Exp: 40</div>
+                        <div class="pokemos_name">Magikarp</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png" alt="gy">
+                        </div>
+                        <div class="pokemon_id-dsc">#130</div>
+                        <div class="pokemos_exp">Exp: 109</div>
+                        <div class="pokemos_name">Gyarados</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png" alt="lapras">
+                        </div>
+                        <div class="pokemon_id-dsc">#131</div>
+                        <div class="pokemos_exp">Exp: 107</div>
+                        <div class="pokemos_name">Lapras</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="ditto">
+                        </div>
+                        <div class="pokemon_id-dsc">#132</div>
+                        <div class="pokemos_exp">Exp: 101</div>
+                        <div class="pokemos_name">Ditto</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png" alt="eevee">
+                        </div>
+                        <div class="pokemon_id-dsc">#133</div>
+                        <div class="pokemos_exp">Exp: 65</div>
+                        <div class="pokemos_name">Eevee</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png" alt="vaporeon">
+                        </div>
+                        <div class="pokemon_id-dsc">#134</div>
+                        <div class="pokemos_exp">Exp: 104</div>
+                        <div class="pokemos_name">Vaporeon</div>
+                        <div class="pokemos_type">Water</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png" alt="jolteon">
+                        </div>
+                        <div class="pokemon_id-dsc">#135</div>
+                        <div class="pokemos_exp">Exp: 104</div>
+                        <div class="pokemos_name">Jolteon</div>
+                        <div class="pokemos_type">Electric</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png" alt="flareon">
+                        </div>
+                        <div class="pokemon_id-dsc">#136</div>
+                        <div class="pokemos_exp">Exp: 104</div>
+                        <div class="pokemos_name">Flareon</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png" alt="porygon">
+                        </div>
+                        <div class="pokemon_id-dsc">#137</div>
+                        <div class="pokemos_exp">Exp: 79</div>
+                        <div class="pokemos_name">Porygon</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png" alt="omany">
+                        </div>
+                        <div class="pokemon_id-dsc">#138</div>
+                        <div class="pokemos_exp">Exp: 71</div>
+                        <div class="pokemos_name">Omanyte</div>
+                        <div class="pokemos_type">Rock</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png" alt="omastar">
+                        </div>
+                        <div class="pokemon_id-dsc">#139</div>
+                        <div class="pokemos_exp">Exp: 173</div>
+                        <div class="pokemos_name">Omastar</div>
+                        <div class="pokemos_type">Rock</div>
+                    </div>
+                    
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png" alt="hypno">
+                        </div>
+                        <div class="pokemon_id-dsc">#140</div>
+                        <div class="pokemos_exp">Exp: 71</div>
+                        <div class="pokemos_name">Kabuto</div>
+                        <div class="pokemos_type">Rock</div>
+                    </div>
+                
+                    <div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png" alt="kabutops">
+                        </div>
+                        <div class="pokemon_id-dsc">#141</div>
+                        <div class="pokemos_exp">Exp: 173</div>
+                        <div class="pokemos_name">Kabutops</div>
+                        <div class="pokemos_type">rock</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png" alt="aero">
+                        </div>
+                        <div class="pokemon_id-dsc">#142</div>
+                        <div class="pokemos_exp">Exp: 100</div>
+                        <div class="pokemos_name">Aerodactyl</div>
+                        <div class="pokemos_type">Rock</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png" alt="snorlax">
+                        </div>
+                        <div class="pokemon_id-dsc">#143</div>
+                        <div class="pokemos_exp">Exp: 109</div>
+                        <div class="pokemos_name">Snorlax</div>
+                        <div class="pokemos_type">Normal</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png" alt="articuno">
+                        </div>
+                        <div class="pokemon_id-dsc">#144</div>
+                        <div class="pokemos_exp">Exp: 290</div>
+                        <div class="pokemos_name">Articuno</div>
+                        <div class="pokemos_type">Ice</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png" alt="zapdos">
+                        </div>
+                        <div class="pokemon_id-dsc">#145</div>
+                        <div class="pokemos_exp">Exp: 299</div>
+                        <div class="pokemos_name">Zapdos</div>
+                        <div class="pokemos_type">Electric</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png" alt="moltres">
+                        </div>
+                        <div class="pokemon_id-dsc">#146</div>
+                        <div class="pokemos_exp">Exp: 290</div>
+                        <div class="pokemos_name">Moltres</div>
+                        <div class="pokemos_type">Fire</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png" alt="dratini">
+                        </div>
+                        <div class="pokemon_id-dsc">#147</div>
+                        <div class="pokemos_exp">Exp: 60</div>
+                        <div class="pokemos_name">Dratini</div>
+                        <div class="pokemos_type">Dragon</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png" alt="dragon">
+                        </div>
+                        <div class="pokemon_id-dsc">#148</div>
+                        <div class="pokemos_exp">Exp: 147</div>
+                        <div class="pokemos_name">Dragonair</div>
+                        <div class="pokemos_type">Dragon</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png" alt="dra">
+                        </div>
+                        <div class="pokemon_id-dsc">#149</div>
+                        <div class="pokemos_exp">Exp: 300</div>
+                        <div class="pokemos_name">Dragonite</div>
+                        <div class="pokemos_type">Dragon</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png" alt="Mewtwo">
+                        </div>
+                        <div class="pokemon_id-dsc">#150</div>
+                        <div class="pokemos_exp">Exp: 340</div>
+                        <div class="pokemos_name">Mewtwo</div>
+                        <div class="pokemos_type">Psychic</div>
+                    </div><div class="pokemos_wrapper" >
+                        <div class="pokemos_img">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png" alt="mew">
+                        </div>
+                        <div class="pokemon_id-dsc">#151</div>
+                        <div class="pokemos_exp">Exp: 300</div>
+                        <div class="pokemos_name">Mew</div>
+                        <div class="pokemos_type">Psychic</div>
+                    </div>
+                </div>
+
+            </div>
+            </section>
+        
+    </div>
+   
+<script src="js/filter.js"></script>
+</body>
+</html>

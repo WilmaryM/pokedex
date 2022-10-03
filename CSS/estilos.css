@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Space Mono', monospace;    color: black;
+}
+
+.page-wrapper{
+    width: 1024px;
+    margin-left: 7%;   
+
+}
+
+.logo-img{
+    display: flex;
+    width: 27.99em;
+    height: 162px;
+    margin-right:auto ;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+}
+.buscar{
+    margin: 26px;
+    padding: 1px;
+    background-color: rgb(0, 0, 0, .8);
+    margin-top: 3.13em;
+    font-size: 0.9em;
+    border-radius: 12px;
+
+}
+
+.input{ 
+    align-items: center;
+    border-radius: 10px;
+    border-color: black;
+    font-size: 2em;
+    width: 8.5em;
+    height: 1.6em;
+    font-family: 'Space Mono', monospace;
+
+}
+
+.w-input{
+    padding: 8px 12px;
+    display: block;
+}
+
+.label {
+    width: 17.85em;
+    color: #fff;
+
+}
+
+.seach_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 9.04em;
+    padding-left: 9.04em;
+    align-items: center;
+    padding-top: 12px;
+    margin-bottom: 35px;
+}
+
+
+.text-block{
+    padding-top: 15px;
+    font-size: 30px;
+    padding-bottom: 20px;
+
+}
+
+
+
+.main_componet{
+    margin-top: 23px;
+    padding-bottom: 13px;
+    align-items: center;
+    
+}
+
+
+.sort_select{
+    width: 15em;
+    height: 34px;
+    border-radius:11px ;
+    color: white;
+    margin-bottom: 9px;
+    font-size: 15px;
+    background-color: black;
+    float:right;
+}
+
+.filter_type--normal{
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.filter_type--grass{
+    background-color: rgba(0, 128, 0, 0.623);
+    border-radius: 10px;
+    text-align: center;
+
+
+}
+
+.filter_type--fire{
+    background-color: rgba(255, 0, 0, 0.692);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.filter_type--water{
+    background-color: rgba(0, 0, 255, 0.603);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.filter_type--bug{
+    background-color: rgba(119, 128, 0, 0.781);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.filter_type--electric{
+    background-color: rgba(255, 251, 0, 0.712);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.filter_type--rock{
+    background-color: rgba(165, 42, 42, 0.685);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.filter_type--ghost{
+    background-color: blueviolet;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.filter_type--poison{
+    background-color: rgba(137, 43, 226, 0.589);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.filter_type--psychic{
+    background-color: rgb(223, 87, 132);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.filter_type--fighting{
+    background-color: chocolate;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.filter_type--ground{
+    background-color: peru;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.filter_type.-dragon{
+background-color: coral;
+
+}
+
+.filter_type{
+    border-radius: 10px;
+    text-align: center;
+}
+
+.filter_type--fairy{
+    background-color: rgb(255, 80, 203);
+    border-radius: 10px;
+        text-align: center;
+
+}.filter_type--ice{
+        background-color: rgb(80, 243, 255);
+        border-radius: 10px;
+            text-align: center;
+        }
+        
+.filter_type--rest{
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    width: fit-content;
+}
+
+.filter_type-wrraper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    height: 1.39em;
+    cursor: pointer;
+
+}
+
+.pokemons{
+
+    padding-top: 48px;
+    align-items: center;
+    display: flex;
+    margin-top: 13px;
+    flex-wrap: wrap;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+
+}
