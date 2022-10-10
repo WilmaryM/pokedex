@@ -13,18 +13,25 @@ fetch('https://pokeapi.co/api/v2/', options)
     .catch(error => console.log('Error'))
 
 
-    // searh pokemon
-let busqueda = document.getElementById("busqueda")
+
+
+    // searh pokemon 
+    
+const form = document.querySelector('#formulario_busqueda')
+ const input = document.querySelector("#name")
+
     function consultaPokemon(id, num){
         fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`)
     .then((res) => {
         res.json()
             .then(function (pokemon) {
-             crearPokemon(pokemon, num)
+             crearPokemon(pokemon)
             });
     });
     };
     consultaPokemon(2)
+
+
     function busarPokeones() {
         let buscar = Math.round(Math.random() * 150)
         

@@ -1,14 +1,28 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+
 }
+
+:root{
+    scroll-behavior: smooth;
+
+}
+
 body{
-    font-family: 'Space Mono', monospace;    color: black;
+    font-family: 'Space Mono', monospace; 
+       color: black;
+
 }
 
 .page-wrapper{
-    width: 1024px;
-    margin-left: 7%;   
+    
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0 ;
 
 }
 
@@ -229,4 +243,29 @@ background-color: coral;
     grid-column-gap: 2%;
     grid-row-gap: 2%;
 
+}
+
+@media screen and (max-width:800px) {
+
+    .seach_form {
+        width: 78vw
+    }
+    .filter_type{
+        width: 107px;
+    }
+
+    .sort_select{
+        width: auto;
+        position: fixed;
+    }
+
+    .sort_selec{
+        width: auto;
+        position: fixed;
+    }
+
+
+    .pokemons{
+        padding: 100px;
+    }
 }
