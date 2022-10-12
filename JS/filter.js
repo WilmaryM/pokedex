@@ -1,46 +1,22 @@
 
-// si funciona correctamente la api
-const options = {
-     method: 'GET',
-     Headers:{
-}
-};
-fetch('https://pokeapi.co/api/v2/', options)
-    .then(res =>  {
-        return res.json();
-    })
-    .then(res => console.log(res))
-    .catch(error => console.log('Error'))
-
-
-
-
-    // prueva
-    
-const form = document.querySelector('#formulario_busqueda')
- const input = document.querySelector("#name")
-
-    function consultaPokemon(id, num){
-        fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
-    .then((res) => {
-        res.json()
-            .then(function (pokemon) {
-             crearPokemon(pokemon, num)
-            });
-    });
-    };
-    consultaPokemon(4)
-
-
-    function busarPokeones() {
-        let buscar = Math.round(Math.random() * 150)
+    const filterPokemon = async() => {
+    try{
+        const Response = await  fetch('https://pokeapi.co/api/v2/')
+            console.log(Response);
+        // si es correcta
+        if(Response.status === 200){
+         const data = await  Response.json();
+        console.log(data.)
+        }else if(Response.status === 401){
+            console.log('no ha sido ejecutada porque carece de credenciales válidas de autenticación')
+        }else if(Response.status === 404){
+            console.log('No esiste ese dato')
+        }
         
-        consultaPokemon(buscar, 1)
-    }
-    busarPokeones()
+    }catch (error) {
+    console.log(error);
+  }
 
-    function crearPokemon(pokemon, num) {
-        let item = busqueda.querySelector(`name${num}`)
     }
-crearPokemon(5)
 
+filterPokemon()
