@@ -1,0 +1,50 @@
+   // si funciona correctamente la api
+fetch('https://pokeapi.co/api/v2/')
+    .then(res =>  {
+        return res.json();
+    })
+    .then(res => console.log(res))
+     .catch(error => console.log('Error'))
+   
+   
+   
+   
+   
+   // prueva
+    
+const form = document.querySelector('#formulario_busqueda')
+ const input = document.querySelector("#name")
+
+    function consultaPokemon(id, num){
+        fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+    .then((res) => {
+        res.json()
+            .then(function (pokemon) {
+             crearPokemon(pokemon, num)
+            });
+    });
+    };
+    consultaPokemon(4)
+
+
+    function busarPokeones() {
+        let buscar = Math.round(Math.random() * 150)
+        
+        consultaPokemon(buscar, 1)
+    }
+    busarPokeones()
+
+    function crearPokemon(pokemon, num) {
+        let item = busqueda.querySelector(`name${num}`)
+    }
+crearPokemon(5)
+
+
+
+fetch('https://pokeapi.co/api/v2/pokemon/1')
+    .then(Response => Response.json())
+    .then(data => {
+        const img = document.getElementById('bul')
+        bul.src = data[0].url;
+    })
+    .catch(error => console.log('Error'))
