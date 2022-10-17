@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       pokemonType.textContent = pokemonDetails.types[0].type.name;
       console.log(pokemonDetails); 
 
-     //const pokemonid = singlePokemon.querySelector('.pokemon_id-dsc');
-    //pokemonid.textContent = pokemonDetails.id;//me volvi a perder
+     const pokemonid = singlePokemon.querySelector('.pokemon_id-dsc');
+    pokemonid.number = pokemonDetails.pokemon;//me volvi a perder
   
-    //const expPokemon = singlePokemon.querySelector('pokemos_exp');
-    //expPokemon.textContent = pokemonDetails.base_experience;//seguir investigando
+    const expPokemon = singlePokemon.querySelector('.pokemos_exp');
+    expPokemon.num = pokemonDetails.base_experience;//seguir investigando
   
      
 
