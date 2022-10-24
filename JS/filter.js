@@ -79,3 +79,52 @@ document.addEventListener("DOMContentLoaded", async () => {
   const fire = dataTypes[2];
   console.log(fire);
   
+
+  
+// //filtersearch
+//  document.addEventListener("DOMContentLoaded", async () => {
+// //   // Referenciar selectores en HTML
+// const bus = document.querySelector(".buscar");
+// const input = document.querySelector("input");
+//  input.remove();
+
+// //   const network = await fetch("pokemons");
+// //   const data = await network(pokemons);
+
+// //   console.log("Resultados", data);});
+
+// document.getElementById('inputsearch').addEventListener("keyup, buscador_interno")
+// function buscador_interno() {
+//   let filter = input.value.toUpperCase();
+//   let busqueda = bus.getElementsByTagName(".pokemons");
+
+//   for (let i = 0; i < busqueda.length; i++) {
+//     let a = busqueda[i].getElementsByTagName("div")[0];
+//     let textValue = a.textContent || a.innerText;
+
+//     if (textValue.toUpperCase().indexOf(filter)) {
+//       busqueda[i].style.display = "";
+
+//       }
+//       }
+//       }
+//     }
+
+// segundo intento
+
+function myfunction() {
+  var x = document.getElementById(".formulario_busqueda");
+  var text = "";
+  for (let i = 0; i < x.length; i++) {
+    text += x.elements[i].value;
+  }
+  document.getElementById(".pokemons").innerHTML = text;
+}
+myfunction();
+// filter por tipos
+
+let normalArray = [
+  {
+    name: "normal"
+  }
+];
