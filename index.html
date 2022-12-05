@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +11,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Lora:ital@1&family=Play&family=Space+Mono&display=swap" rel="stylesheet">
 
 <body>
-
-
-    <div class="page-wrapper">
-        <section>
+        <div class="page-wrapper">
+            <section>
             <div class="logo-img">
-                <img src="img/descarga.png" alt="Logo">
+                <img src= "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="Logo">
             </div>
 
-            <div class="buscar" id="busqueda">
+            <div class="buscar" id="busqueda" >
                 <form action="" method="get"  class="seach_form" id="formulario_busqueda">
-                    <input type="text" class="input w-input"  name="name" placeholder="Search Pokemon" id="name">
+                    <input type="search" class="input w-input"  name="name" placeholder="Search Pokemon" id="searchBox" >
                     <br>
                     <div class="label">Use this input to search for any pokemon. In an instant</div>
                 </form>
             </div>
 
-            <div class="main">
-                <div class="main_fuctions">
-                    <div class="main_filter">
+                    <div class="main">
                         <div class="text-block">Filter by type:</div>
-                        <div class="filter_type-wrraper">
-                            <div class="filter_type--normal" id="normal">Normal</div>
-                            <div class="filter_type--grass" id="grass">Grass</div>
-                            <div class="filter_type--fire" id="fire">Fire</div>
+                           <div class="filter_type-wrraper activo">
+                                <div class="filter_type" onclick="filtertypepoke()" value="filterpoke">Normal</div>    <!--acá hay un error que dice que no esta definida la funcion onclick. -->
+
+                           <!-- <div class="filter_type--grass" id="grass">Grass</div>
+                            <div class="--fire" id="fire">Fire</div>
                             <div class="filter_type--water" id="water" >Water</div>
                             <div class="filter_type--bug" id="bug" >Bug</div>
                             <div class="filter_type--electric"id="ele" >Electric</div>
@@ -48,7 +44,8 @@
                             <div class="filter_type -dragon" id="dra">Dragon</div>
                             <div class="filter_type--fairy" id="fai">Fairy</div>
                             <div class="filter_type--ice" id="ice">Ice</div>
-                            <div class="filter_type--rest" id="rest">Rest</div>   
+                            <div class="filter_type--rest" id="filter_type" >Rest</div> -->
+
                         </div>
                     </div>
 
@@ -62,12 +59,11 @@
                                     <option value="base-experience-dsc">Base Experience DSC</option>
                                 </select>
                             </form>
-
                         </div>
-                    </div>
-                </div>
+
                 <div class="pokemons">
-                    <div class="pokemos_wrapper">
+                    <!-- Este es un Pokemon estático -->
+                    <div class="pokemos_wrapper active">
                         <div class="pokemos_img">
                             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="Bulbasaur">
                         </div>
@@ -76,13 +72,13 @@
                         <div class="pokemos_name">Bulbasaur</div>
                         <div class="pokemos_type">Grass</div>
                     </div>
-             </div>
-        </section>
+            </div>
+    </section>
         
-    </div>
+</div>
 
 
-<script src="js/filter.js"></script>
+<script src="/JS/filter.js" defer></script>
 
 </body>
 </html>
