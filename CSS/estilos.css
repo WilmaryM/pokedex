@@ -269,3 +269,7 @@ background-color: coral;
         padding: 100px;
     }
 }
+
+.pokemos_wrapper:not(.activo) {
+    display: none;
+}
